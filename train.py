@@ -20,7 +20,7 @@ def main(args):
     memory = PhaseMemory(max_mem=10000, dim=model.codebook.shape[1], k=5)
 
     # ---------- 1 epoch ----------
-    model.train()
+
     t0 = time.time()
     for x, y in tqdm(train_loader, desc="train"):
         for xi, yi in zip(x, y):
