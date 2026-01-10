@@ -4,7 +4,7 @@
 ---
 
 ## Résumé  
-Nous introduisons **PhaseTower**, une architecture neuronale entièrement complexe qui remplace les poids réels par des **phasors** (direction + angle). Le modèle apprend **sans rétro-propagation**, élague **95 %** de ses neurones à l’inférence, mémorise les exemples **sans ré-entraînement** et **crée de nouvelles classes** par **addition de phases**. Sur MNIST, PhaseTower atteint **99,3 %** en **une seule epoch**, **22× moins de FLOPS** et **335× moins de paramètres actifs** qu’un MLP équivalent. Il reconnaît des **concepts jamais vus** (ex. « 13 » = 1+3) avec **91 % de précision**, détecte **nativement** les exemples hors distribution et tient sur **250 kB** (poids + mémoire). Code et poids : [github.com/xyz/PhaseTower](https://github.com/UnAlphaOne/PhaseTower)
+Nous introduisons **PhaseTower**, une architecture neuronale entièrement complexe qui remplace les poids réels par des **phasors** (direction + angle). Le modèle apprend **sans rétro-propagation**, élague **95 %** de ses neurones à l’inférence, mémorise les exemples **sans ré-entraînement** et **crée de nouvelles classes** par **addition de phases**. Sur MNIST, PhaseTower atteint **99,3 %** en **une seule epoch**, **22× moins de FLOPS** et **335× moins de paramètres actifs** qu’un MLP équivalent. Il reconnaît des **concepts jamais vus** (ex. « 13 » = 1+3) avec **91 % de précision**, détecte **nativement** les exemples hors distribution et tient sur **250 kB** (poids + mémoire). Code et poids : [github.com/UnAlphaOne/PhaseTower](https://github.com/UnAlphaOne/PhaseTower)
 
 ---
 
@@ -182,5 +182,6 @@ PhaseTower **surclasse** les MLP **sur la même tâche**, **sans gradient**, **a
 [6] Jayakumar, S. M., et al. *Top-KAST: Top-K Always Sparse Training*, NeurIPS, 2020.
 
 ---
+
 
 **Code & poids** : [https://github.com/UnAlphaOne/PhaseTower](https://github.com/UnAlphaOne/PhaseTower)
